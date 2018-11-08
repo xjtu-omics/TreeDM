@@ -1,4 +1,10 @@
-Welcome to TreeDM(PGOneI)
+TreeDM(PGOneI)
+-----------------------------------------------------------------------------------------
+Alignment independent phylogeny reconstruction: a sequential pattern mining method
+version1.0 
+
+To compile TreeDM you need GNU Make and GCC.
+-----------------------------------------------
 
 Usage: ./TreeDM [options] ...
 
@@ -12,7 +18,7 @@ options:
   -h/?   help pritn this message
   
   
-Use this code to generate a distance matrix for nerghbor-joining method
+Use TreeDM to generate a distance matrix for nerghbor-joining method
 
 It's easy to use
 Go to Makefile directory
@@ -24,13 +30,14 @@ Then
     ./TreeDM [options]
 
 	
-You can get patterns file and Distance_Matrix(DM.txt) file
+Output includes two parts: patterns_file and Distance_Matrix(DM.txt) file
 
 Use this DM.txt as input for nerghbor-joining method
 You can get a phylogenetic tree
 
-
-If you have the phylip package installed. Generate a phylogenetic
-tree using ./neighbor DM.txt in the folder where the 
-executable program is located.
-
+---------------------------------------------------------------------------------
+Use PHYLIP(from http://evolution.genetics.washington.edu/phylip/getme-new1.html)
+	software_package(neighbor) to generate a phylogenetic tree 
+If you have the PHYLIP installed. Use neighbor program to Generate a phylogenetic
+	tree using ./[path]/neighbor [path]/DM.txt. See example for details
+ 
