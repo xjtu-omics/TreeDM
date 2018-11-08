@@ -1,0 +1,36 @@
+Welcome to TreeDM(PGOneI)
+
+Usage: ./TreeDM [options] ...
+
+options:
+  -n   <int>   The minimal number of non_wildcard residues in the pattern to be reported
+  -s   <float>   The minimal proportion of proteins haveing the pattern
+  -m   <int>   The maximal length of wildcard in the patterns
+  -i   <string>   The pathway and filename of sequences in fasta format
+  -p   <string>   The pathway and filename of the PatternSpace filedefaults: ./ppfile
+  -o   <string>   The pathway of the distance matrix(defaults: ./)
+  -h/?   help pritn this message
+  
+  
+Use this code to generate a distance matrix for nerghbor-joining method
+
+It's easy to use
+Go to Makefile directory
+
+    make 
+
+Then
+
+    ./TreeDM [options]
+
+	
+You can get patterns file and Distance_Matrix(DM.txt) file
+
+Use this DM.txt as input for nerghbor-joining method
+You can get a phylogenetic tree
+
+
+If you have the phylip package installed. Generate a phylogenetic
+tree using ./neighbor DM.txt in the folder where the 
+executable program is located.
+
