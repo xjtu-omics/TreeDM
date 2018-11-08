@@ -1,9 +1,15 @@
-A low similarity sequences containing 200 sequences
+A low similarity protein sequences containing 200 sequences
 
 Run： 
 
 	[path]/TreeDM -n 3 -s 0.03 -m 2 -i seqfile.fasta
 
+	non-wildcard is 3; support is 0.03; max-wildcard is 2
+	(change parameters according to the sequences, for high similarity
+	sequences: support can't be too small, the non-wildcard and max-wildcard
+	can't be too big. For DNA sequences, you can set max-wildcard is 0, and set 
+	non-wildcard big.)
+	
 You can get a ppfile(all patterns for construct pattern vectors) and a
 DM.txt(distance matrix for neighbor-joining method) file.
 
