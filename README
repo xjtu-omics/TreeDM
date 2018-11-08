@@ -4,9 +4,10 @@ Alignment independent phylogeny reconstruction: a sequential pattern mining meth
 version1.0 
 
 To compile TreeDM you need GNU Make and GCC.
------------------------------------------------
 
-Usage: ./TreeDM [options] ...
+
+Usage: 
+		./TreeDM [options] ...
 
 options:
   -n   <int>   The minimal number of non_wildcard residues in the pattern to be reported
@@ -32,12 +33,15 @@ Then
 	
 Output includes two parts: patterns_file and Distance_Matrix(DM.txt) file
 
-Use this DM.txt as input for nerghbor-joining method
+Use DM.txt as input for nerghbor-joining method
 You can get a phylogenetic tree
 
 ---------------------------------------------------------------------------------
 Use PHYLIP(from http://evolution.genetics.washington.edu/phylip/getme-new1.html)
-	software_package(neighbor) to generate a phylogenetic tree 
-If you have the PHYLIP installed. Use neighbor program to Generate a phylogenetic
-	tree using ./[path]/neighbor [path]/DM.txt. See example for details
+software_package(neighbor) to generate a phylogenetic tree. If you have the PHYLIP
+installed. Use neighbor program to Generate a phylogenetic tree using:
+  
+  [path]/neighbor [path]/DM.txt   
+
+See example for details
  

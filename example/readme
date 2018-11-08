@@ -1,11 +1,25 @@
-low similarity sequences
-200 sequences
+A low similarity sequences containing 200 sequences
 
-run： 
-		path/TreeDM -n 3 -s 0.03 -m 2 -i seqfile.fasta
-		path/phylip/exe/neighbor DM.txt(infile)
-		
-or
-		path/TreeDM -n 3 -s 0.03 -m 2 -i seqfile.fasta -p path/patterns_file -o path_for_DistanceMatrix 
-		path/phylip/exe/neighbor DM.txt(infile)
+Run： 
+
+	[path]/TreeDM -n 3 -s 0.03 -m 2 -i seqfile.fasta
+
+You can get a ppfile(all patterns for construct pattern vectors) and a
+DM.txt(distance matrix for neighbor-joining method) file.
+
+Use neighbor-joining method(neighbor) from PHYLIP package you can download at 
+	http://evolution.genetics.washington.edu/phylip/getme-new1.html
+and install according to 
+	http://evolution.genetics.washington.edu/phylip/install.html
+
+Run neighbor use:
+
+	[path]/neighbor DM.txt(infile)
+
+Output of neighbor are outfile and outtree
+
+You can specifies the output_file path using -p and -o  
+	
+	[path]/TreeDM -n 3 -s 0.03 -m 2 -i seqfile.fasta -p [path]/patterns_file -o [path_for_DistanceMatrix] 
+	[path]/neighbor DM.txt(infile)
 		
